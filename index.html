@@ -34,7 +34,6 @@
             <i class="fa-solid fa-phone"></i>
             <p>(+605) 1234-56789</p>
           </div>
-          <!-- <div class="contact-us"></div> -->
         </nav>
       </div>
     </header>
@@ -48,33 +47,36 @@
       <section id="booking-section">
         <div class="container">
           <form action="">
-            <div class="check-in-container">
-              <label for="check-in">Check-In Date</label>
-              <input
-                type="date"
-                name="check-in"
-                id="check-in"
-                placeholder="Check-In Date"
-              />
+            <div class="flex-container">
+              <div class="check-in-container">
+                <label for="check-in">Check-In Date</label>
+                <input
+                  type="date"
+                  name="check-in"
+                  id="check-in"
+                  placeholder="Check-In Date"
+                />
+              </div>
+              <div class="check-out-container">
+                <label for="check-in">Check-Out Date</label>
+                <input
+                  type="date"
+                  name="check-out"
+                  id="check-out"
+                  placeholder="Check-Out Date"
+                />
+              </div>
+              <div class="contact-container">
+                <label for="contact">Contact No.</label>
+                <input
+                  type="tel"
+                  name="contact"
+                  id="contact"
+                  placeholder="Your Contact No."
+                />
+              </div>
             </div>
-            <div class="check-out-container">
-              <label for="check-in">Check-Out Date</label>
-              <input
-                type="date"
-                name="check-out"
-                id="check-out"
-                placeholder="Check-Out Date"
-              />
-            </div>
-            <div class="contact-container">
-              <label for="contact">Contact No.</label>
-              <input
-                type="tel"
-                name="contact"
-                id="contact"
-                placeholder="Your Contact No."
-              />
-            </div>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </section>
@@ -125,8 +127,27 @@
           </div>
         </div>
       </section>
-      <section id="services-section"></section>
-      <section id="cottages-section"></section>
+      <section id="services-section">
+        <div class="container">
+          <div class="services-carousel">
+            <img src="./assets/images/services-img-1.png" alt="" />
+            <img src="./assets/images/services-img-2.png" alt="" />
+            <img src="./assets/images/services-img-3.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="cottages-section">
+        <div class="container">
+          <h2>Cottages</h2>
+          <div class="flex-container">
+            <div>sample image</div>
+            <div>sample image</div>
+            <div>sample image</div>
+            <div>sample image</div>
+            <div>sample image</div>
+          </div>
+        </div>
+      </section>
       <section id="videos-section"></section>
       <section id="contactus-section"></section>
     </main>
