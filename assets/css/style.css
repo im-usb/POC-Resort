@@ -236,8 +236,10 @@ header nav {
   /* background-position: center; */
   text-align: center;
   padding: 60px 0;
+  /* margin: 0 0 80px; */
   height: 100vh;
   position: relative;
+  border-bottom: solid 2px #ff8c00;
 }
 
 #cottages-section > img {
@@ -270,3 +272,71 @@ header nav {
   justify-content: center;
   align-items: center;
 }
+
+/* videos section */
+#videos-section {
+  text-align: center;
+  padding: 80px 0;
+}
+
+#videos-section h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 30px;
+  color: #ff8c00;
+  margin: 0 0 20px;
+}
+
+#videos-section h3 {
+  font-size: 20px;
+  color: #ff8c00;
+  margin: 0 0 60px;
+}
+
+#videos-section .videos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.videos .flex-left {
+  width: 45%;
+  border: solid 2px #ff8c00;
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.videos .flex-left iframe {
+  position: relative;
+  left: -30px;
+}
+
+.videos .flex-right {
+  width: 45%;
+  border: solid 2px #ff8c00;
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.videos .flex-right iframe {
+  position: relative;
+  left: -30px;
+}
+
+.videos iframe {
+  max-width: 500px;
+  width: 100%;
+}
+
+#videos-section .line-through {
+  background-color: #ff8c00;
+  height: 2px;
+  width: 100%;
+  position: relative;
+  bottom: 50px;
+  z-index: -100;
+}
+
+/* Contact-us section */
