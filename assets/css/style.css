@@ -1,0 +1,171 @@
+/* general styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Header section */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.nav-items ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.call-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.call-us p {
+  color: #ff8c00;
+}
+
+.fa-phone {
+  padding: 10px;
+  color: #fff;
+  background-color: #ff8c00;
+  border-radius: 100%;
+}
+
+/* Hero Section */
+#hero-section {
+  background: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Booking Section */
+#booking-section form {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 20px;
+  background-color: #ff8c00;
+  border-radius: 50px;
+  margin: -52px auto 60px;
+  max-width: 1024px;
+}
+
+.check-in-container label {
+  display: block;
+  text-align: center;
+  margin: 0 0 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.check-in-container input {
+  width: 200px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.check-out-container label {
+  display: block;
+  text-align: center;
+  margin: 0 0 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.check-out-container input {
+  width: 200px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.contact-container label {
+  display: block;
+  text-align: center;
+  margin: 0 0 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.contact-container input {
+  width: 200px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+/* About Section */
+#about-section {
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 30px;
+  margin: 0 0 80px;
+}
+
+#about-section h2 {
+  color: #ff8c00;
+  margin: 0 0 60px;
+}
+
+#about-section h2 span {
+  display: block;
+}
+
+.about-carousel {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-carousel div h3 {
+  font-size: 30px;
+  color: #ff8c00;
+}
+
+.about-carousel .image-1,
+.about-carousel .image-3 {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 400px 400px 0 0;
+  box-shadow: 2px -5px 20px 0px #525252;
+}
+
+.about-carousel .image-2 {
+  width: 450px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 600px 600px 0 0;
+  box-shadow: 2px -5px 20px 0px #808080;
+}
