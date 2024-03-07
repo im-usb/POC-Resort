@@ -127,14 +127,15 @@ header nav {
 /* About Section */
 #about-section {
   text-align: center;
-  font-family: "Cinzel Decorative", serif;
-  font-size: 30px;
   margin: 0 0 80px;
 }
 
 #about-section h2 {
   color: #ff8c00;
   margin: 0 0 60px;
+  padding: 30px 0 0;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 40px;
 }
 
 #about-section h2 span {
@@ -146,11 +147,13 @@ header nav {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin: 0 0 60px;
 }
 
 .about-carousel div h3 {
   font-size: 30px;
   color: #ff8c00;
+  font-family: "Cinzel Decorative", serif;
 }
 
 .about-carousel .image-1,
@@ -168,4 +171,29 @@ header nav {
   object-fit: cover;
   border-radius: 600px 600px 0 0;
   box-shadow: 2px -5px 20px 0px #808080;
+}
+
+.about-desc {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.about-desc h3 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 30px;
+  color: #ff8c00;
+  margin: 0 0 30px;
+}
+
+.about-desc h3 span {
+  margin: 0 0 0 1px;
+}
+
+.about-desc .new-line {
+  display: block;
+}
+
+.about-desc p {
+  font-size: 18px;
 }
