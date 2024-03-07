@@ -76,7 +76,7 @@
                 />
               </div>
             </div>
-            <button type="submit">Submit</button>
+            <!-- <button type="submit">Submit</button> -->
           </form>
         </div>
       </section>
@@ -128,11 +128,22 @@
         </div>
       </section>
       <section id="services-section">
-        <div class="container">
-          <div class="services-carousel">
-            <img src="./assets/images/services-img-1.png" alt="" />
-            <img src="./assets/images/services-img-2.png" alt="" />
-            <img src="./assets/images/services-img-3.png" alt="" />
+        <div class="backdrop">
+          <div class="container">
+            <div class="services-carousel">
+              <div>
+                <img src="./assets/images/services-img-1.png" alt="" />
+                <p>Service 1</p>
+              </div>
+              <div>
+                <img src="./assets/images/services-img-2.png" alt="" />
+                <p>Service 2</p>
+              </div>
+              <div>
+                <img src="./assets/images/services-img-3.png" alt="" />
+                <p>Service 3</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -185,28 +196,81 @@
           <div class="flex-container">
             <div class="left">
               <div>
-                <!-- <img
+                <img
                   src="./assets/images/about-image-1.png"
-                  class="image-2"
+                  class="contact-img"
                   alt=""
-                /> -->
+                />
               </div>
             </div>
             <div class="right">
               <h2>Make Your Wedding Unforgetable</h2>
               <form action="">
-                <div>
-                  <input type="text" name="" id="" />
-                  <input type="text" name="" id="" />
+                <div class="name">
+                  <div class="first-name">
+                    <label for="first-name">First-Name:</label>
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      placeholder="Your First Name*"
+                    />
+                  </div>
+                  <div class="last-name">
+                    <label for="last-name">Last Name:</label>
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      placeholder="Your Last Name*"
+                    />
+                  </div>
                 </div>
-                <input type="email" name="" id="" />
-                <input type="tel" name="" id="" />
-                <input type="number" name="" id="" />
-                <div>
-                  <input type="date" name="" id="" />
-                  <input type="date" name="" id="" />
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email*"
+                />
+                <label for="phone">Contact No:</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Your Contact No.*"
+                />
+                <label for="guests">Guests:</label>
+                <input
+                  type="number"
+                  name="guests"
+                  id="guests"
+                  min="1"
+                  placeholder="No. Of Guests"
+                />
+                <div class="dates">
+                  <div class="check-in-date">
+                    <label for="check-in-date">Check In Date:</label>
+                    <input
+                      type="date"
+                      name="check-in-date"
+                      id="check-in-date"
+                      placeholder="Check-In Date"
+                    />
+                  </div>
+                  <div class="check-out-date">
+                    <label for="check-out-date">Check Out Date:</label>
+                    <input
+                      type="date"
+                      name="check-out-date"
+                      id="check-out-date"
+                      placeholder="Check-Out Date"
+                    />
+                  </div>
                 </div>
-                <input type="submit" value="" />
+                <div class="submit">
+                  <input type="submit" value="Submit" />
+                </div>
               </form>
             </div>
           </div>
