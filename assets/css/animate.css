@@ -1,0 +1,17 @@
+.nav-items li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff8c00;
+  transition: width 0.3s;
+}
+
+.nav-items a:hover::after {
+  width: 100%;
+}
+
+.nav-items a:hover {
+  color: #ff8c00;
+  transition: ease 0.3s;
+}
