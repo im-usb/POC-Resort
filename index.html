@@ -13,20 +13,27 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/animate.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header>
       <div class="container">
         <nav>
           <div class="site-logo">
-            <img src="./assets/images/logo-header.png" alt="site logo" />
+            <a href="#"
+              ><img
+                class="logo"
+                src="./assets/images/logo-header.png"
+                alt="site logo"
+              />
+            </a>
           </div>
           <div class="nav-items">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#about-section">Services</a></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Appointment</a></li>
+              <li><a href="#contactus-section">Appointment</a></li>
             </ul>
           </div>
           <div class="call-us">
@@ -39,77 +46,77 @@
     </header>
     <main>
       <section id="hero-section">
-        <!-- <img src="./assets/images/hero.jpg" alt="" /> -->
-        <!-- <div class="container">
-          <div></div>
-        </div> -->
-      </section>
-      <section id="booking-section">
-        <div class="container">
-          <form action="">
-            <div class="flex-container">
-              <div class="check-in-container">
-                <label for="check-in">Check-In Date</label>
-                <input
-                  type="date"
-                  name="check-in"
-                  id="check-in"
-                  placeholder="Check-In Date"
-                />
-              </div>
-              <div class="check-out-container">
-                <label for="check-in">Check-Out Date</label>
-                <input
-                  type="date"
-                  name="check-out"
-                  id="check-out"
-                  placeholder="Check-Out Date"
-                />
-              </div>
-              <div class="contact-container">
-                <label for="contact">Contact No.</label>
-                <input
-                  type="tel"
-                  name="contact"
-                  id="contact"
-                  placeholder="Your Contact No."
-                />
-              </div>
-            </div>
-            <!-- <button type="submit">Submit</button> -->
-          </form>
+        <div class="hero-carousel">
+          <button class="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <ul>
+            <li class="slide">
+              <img
+                src="https://www.sollunaresort.com/images/b/wb31.webp"
+                alt=""
+              />
+            </li>
+            <li class="slide active">
+              <img
+                src="https://www.sollunaresort.com/images/b/wb1.webp"
+                alt=""
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="https://www.sollunaresort.com/images/b/wb4.webp"
+                alt=""
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="https://www.sollunaresort.com/images/b/wb2.webp"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
       </section>
       <section id="about-section">
+        <img class="right-bg" src="./assets/images/leaf 2.png" alt="" />
         <h2>Take a glimpse of <span>our wedding setups</span></h2>
-        <div class="about-carousel">
-          <div>
-            <img
-              src="./assets/images/about-image-1.png"
-              class="image-1"
-              alt=""
-            />
-            <h3>Haldi</h3>
-          </div>
-          <div>
-            <img
-              src="./assets/images/about-image-1.png"
-              class="image-2"
-              alt=""
-            />
-            <h3>Mandap</h3>
-          </div>
-          <div>
-            <img
-              src="./assets/images/about-image-1.png"
-              class="image-3"
-              alt=""
-            />
-            <h3>Mehdi</h3>
+        <div class="container">
+          <div class="about-carousel">
+            <div class="card">
+              <img
+                src="./assets/images/about-image-1.png"
+                class="image-1"
+                alt=""
+              />
+              <h3>Haldi</h3>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/images/about-image-1.png"
+                class="image-2"
+                alt=""
+              />
+              <h3>Mandap</h3>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/images/about-image-1.png"
+                class="image-3"
+                alt=""
+              />
+              <h3>Mehdi</h3>
+            </div>
           </div>
         </div>
-        <div class="container">
-          <div class="about-desc">
+
+        <div class="about-desc">
+          <img class="left-desc-bg" src="./assets/images/1 leaf.png" alt="" />
+          <img class="right-desc-bg" src="./assets/images/1 leaf.png" alt="" />
+          <div class="container">
             <h3>
               Cho<span>ose</span> us for your
               <span class="new-line">wedding destination</span>
@@ -129,6 +136,12 @@
       </section>
       <section id="services-section">
         <div class="backdrop">
+          <button class="left-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="right-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
           <div class="container">
             <div class="services-carousel">
               <div>
@@ -143,10 +156,23 @@
                 <img src="./assets/images/services-img-3.png" alt="" />
                 <p>Service 3</p>
               </div>
+              <div>
+                <img src="./assets/images/services-img-1.png" alt="" />
+                <p>Service 4</p>
+              </div>
+              <div>
+                <img src="./assets/images/services-img-2.png" alt="" />
+                <p>Service 5</p>
+              </div>
+              <div>
+                <img src="./assets/images/services-img-3.png" alt="" />
+                <p>Service 6</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
       <section id="cottages-section">
         <div class="container">
           <h2>Cottages</h2>
@@ -277,7 +303,6 @@
         </div>
       </section>
     </main>
-    <footer></footer>
   </body>
 </html>
 l

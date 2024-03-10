@@ -1,3 +1,8 @@
+* {
+  scroll-behavior: smooth;
+}
+
+/* Nav items animations */
 .nav-items li a::after {
   content: "";
   display: block;
@@ -14,4 +19,27 @@
 .nav-items a:hover {
   color: #ff8c00;
   transition: ease 0.3s;
+}
+
+/* Hero section animations */
+
+.slide.active {
+  animation: scaleAnimation 4s ease-in-out forwards;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-carousel .prev:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-carousel .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
