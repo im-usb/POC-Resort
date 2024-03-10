@@ -1,3 +1,21 @@
+//header
+let lastScrollTop = 0;
+const navbar = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+  let currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scrolling down
+    navbar.style.top = "-100px"; // Hide the navbar
+  } else {
+    // Scrolling up
+    navbar.style.top = "0"; // Show the navbar
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
 // JavaScript for carousel functionality
 document.addEventListener("DOMContentLoaded", function () {
   // Get all slides

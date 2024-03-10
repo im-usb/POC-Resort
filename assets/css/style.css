@@ -12,6 +12,7 @@ body {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 .container {
@@ -28,6 +29,7 @@ header {
   z-index: 1000;
   background-color: #fff;
   border-bottom: 1px solid #e1e1e1;
+  transition: top 0.3s ease-in-out;
 }
 
 header nav {
@@ -142,10 +144,14 @@ header nav {
 
 #about-section .right-bg {
   position: absolute;
-  top: 80px;
+  top: 0;
   right: 0;
   transform: rotate(180deg);
   width: 200px;
+}
+
+.about-top {
+  height: 100vh;
 }
 
 #about-section h2 {
