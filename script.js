@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const servicesCarousel = document.querySelector(".services-carousel");
 const leftButton = document.querySelector(".left-btn");
 const rightButton = document.querySelector(".right-btn");
+const carouselArea = document.querySelector(".backdrop");
 
 let currentIndex = 0;
 const totalServices = servicesCarousel.children.length - 2;
@@ -111,8 +112,8 @@ function stopCarouselInterval() {
 startCarouselInterval();
 
 // Add event listeners for mouse enter and mouse leave to start and stop the interval
-servicesCarousel.addEventListener("mouseenter", stopCarouselInterval);
-servicesCarousel.addEventListener("mouseleave", startCarouselInterval);
+carouselArea.addEventListener("mouseenter", stopCarouselInterval);
+carouselArea.addEventListener("mouseleave", startCarouselInterval);
 
 leftButton.addEventListener("click", () => {
   moveCarousel("left");
