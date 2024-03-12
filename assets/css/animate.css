@@ -43,3 +43,8 @@
 .hero-carousel .next:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* Services section */
+#services-section .swiper-slide > div:hover img {
+  transform: scale(1.1);
+}

@@ -11,8 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/animate.css" />
+    <script src="./assets/js/swiper-bundle.min.js" defer></script>
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -55,28 +61,16 @@
           </button>
           <ul>
             <li class="slide">
-              <img
-                src="https://www.sollunaresort.com/images/b/wb31.webp"
-                alt=""
-              />
+              <img src="./assets/images/banner/banner 1.jpg" alt="" />
             </li>
             <li class="slide active">
-              <img
-                src="https://www.sollunaresort.com/images/b/wb1.webp"
-                alt=""
-              />
+              <img src="./assets/images/banner/banner 2.jpg" alt="" />
             </li>
             <li class="slide">
-              <img
-                src="https://www.sollunaresort.com/images/b/wb4.webp"
-                alt=""
-              />
+              <img src="./assets/images/banner/banner 3.jpg" alt="" />
             </li>
             <li class="slide">
-              <img
-                src="https://www.sollunaresort.com/images/b/wb2.webp"
-                alt=""
-              />
+              <img src="./assets/images/banner/banner 4.jpg" alt="" />
             </li>
           </ul>
         </div>
@@ -86,30 +80,40 @@
         <div class="about-top">
           <h2>Take a glimpse of <span>our wedding setups</span></h2>
           <div class="container">
-            <div class="about-carousel">
-              <div class="card">
-                <img
-                  src="./assets/images/about-image-1.png"
-                  class="image-1"
-                  alt=""
-                />
-                <h3>Haldi</h3>
-              </div>
-              <div class="card">
-                <img
-                  src="./assets/images/about-image-1.png"
-                  class="image-2"
-                  alt=""
-                />
-                <h3>Mandap</h3>
-              </div>
-              <div class="card">
-                <img
-                  src="./assets/images/about-image-1.png"
-                  class="image-3"
-                  alt=""
-                />
-                <h3>Mehdi</h3>
+            <div class="swiper themeSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                  <img
+                    src="./assets/images/theme/haldi.jpg"
+                    class="image-1"
+                    alt=""
+                  />
+                  <h3>Haldi</h3>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                  <img
+                    src="./assets/images/theme/mandap.jpg"
+                    class="image-2"
+                    alt=""
+                  />
+                  <h3>Mandap</h3>
+                </div>
+                <div class="swiper-slide swiper-slide--three">
+                  <img
+                    src="./assets/images/theme/mehndi.jpg"
+                    class="image-3"
+                    alt=""
+                  />
+                  <h3>Mehdi</h3>
+                </div>
+                <div class="swiper-slide swiper-slide--four">
+                  <img
+                    src="./assets/images/theme/cocktail party.jpg"
+                    class="image-3"
+                    alt=""
+                  />
+                  <h3>Cocktail Party</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -138,52 +142,96 @@
       </section>
       <section id="services-section">
         <div class="backdrop">
-          <button class="left-btn">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button class="right-btn">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
           <div class="container">
-            <div class="services-carousel">
-              <div>
-                <img src="./assets/images/services-img-1.png" alt="" />
-                <p>Service 1</p>
-              </div>
-              <div>
-                <img src="./assets/images/services-img-2.png" alt="" />
-                <p>Service 2</p>
-              </div>
-              <div>
-                <img src="./assets/images/services-img-3.png" alt="" />
-                <p>Service 3</p>
-              </div>
-              <div>
-                <img src="./assets/images/services-img-1.png" alt="" />
-                <p>Service 4</p>
-              </div>
-              <div>
-                <img src="./assets/images/services-img-2.png" alt="" />
-                <p>Service 5</p>
-              </div>
-              <div>
-                <img src="./assets/images/services-img-3.png" alt="" />
-                <p>Service 6</p>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <img
+                      src="./assets/images/services/Candid Moments.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <p>Candid Moments</p>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img
+                      src="./assets/images/services/Culinary Experiences.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Culinary <br />Experiences</p>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="./assets/images/services/Decoration.jpg" alt="" />
+                  </div>
+                  <p>Decoration</p>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img
+                      src="./assets/images/services/Digital Wedding.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>
+                    digital <br />
+                    Wedding
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img
+                      src="./assets/images/services/Hair Do & Makeover.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Hair Do & Makeover</p>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img
+                      src="./assets/images/services/Transportation Services.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <p>Transportation <br />Services</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <section id="cottages-section">
         <div class="container">
           <h2>Cottages</h2>
           <div class="flex-container">
-            <div>sample image</div>
-            <div>sample image</div>
-            <div>sample image</div>
-            <div>sample image</div>
-            <div>sample image</div>
+            <div>
+              <img
+                src="./assets/images/rooms/DELUXE COTTAGE The Fragrance.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img src="./assets/images/rooms/DELUXE COTTAGE.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./assets/images/rooms/PREMIER COTTAGE.jpg" alt="" />
+            </div>
+            <div>
+              <img
+                src="./assets/images/rooms/PRESIDENTIAL COTTAGE.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img src="./assets/images/rooms/SUPERIOR COTTAGE.jpg" alt="" />
+            </div>
           </div>
         </div>
         <img src="./assets/images/leaf 2.png" alt="" />
