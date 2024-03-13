@@ -100,3 +100,22 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// back to top buttom
+document.addEventListener("DOMContentLoaded", function () {
+  const topBtn = document.querySelector(".top-btn");
+  const rotated = document.querySelector(".rotated");
+  const handleScroll = () => {
+    const scrollPosition = document.documentElement.scrollTop;
+    if (scrollPosition < 50) {
+      topBtn.querySelector("a").href = "#about-section";
+      topBtn.style.animation = "towards-top 0.5s ease-in-out";
+      topBtn.classList.remove("rotated");
+    } else {
+      topBtn.querySelector("a").href = "#";
+      topBtn.style.animation = "towards-bottom 0.5s ease-in-out";
+      topBtn.classList.add("rotated");
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+});

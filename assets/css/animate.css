@@ -37,11 +37,11 @@
 }
 
 .hero-carousel .prev:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hero-carousel .next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Services section */
@@ -83,4 +83,23 @@
 }
 .social-wp:hover {
   background: #128c7e;
+}
+
+/* back to top animation */
+@keyframes towards-top {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes towards-bottom {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }

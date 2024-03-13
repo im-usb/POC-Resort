@@ -77,7 +77,7 @@ header nav {
 /* Hero Section */
 #hero-section {
   min-height: 768px;
-  height: calc(100vh - 78px);
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -87,12 +87,36 @@ header nav {
   height: 100%;
 }
 
+.hero-carousel .hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+}
+
+.hero-carousel .hero-title > h1::after {
+  content: "";
+  width: 100px;
+  height: 5px;
+  background: #fff;
+  display: block;
+  margin: 20px auto;
+}
+
+.hero-carousel .hero-title h2 {
+  font-size: 20px;
+}
+
 .hero-carousel .prev {
   position: absolute;
   left: 50px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   border: none;
   padding: 5px 8px;
   font-size: 25px;
@@ -105,7 +129,7 @@ header nav {
   right: 50px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   border: none;
   padding: 5px 8px;
   font-size: 25px;
@@ -140,6 +164,64 @@ header nav {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: brightness(0.7);
+}
+
+/* Booking Section */
+#booking-section form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+  background-color: rgb(255, 140, 0, 0.5);
+  margin: -52px auto 60px;
+  max-width: 1024px;
+  position: relative;
+  z-index: 100;
+}
+
+.check-in-container,
+.check-out-container,
+.contact-container {
+  max-width: 200px;
+  width: 100%;
+}
+
+.check-in-container label,
+.check-out-container label,
+.contact-container label {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+
+.check-in-container input,
+.check-out-container input,
+.contact-container input {
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.book-now-btn {
+  width: 100px;
+  height: 58px;
+}
+
+.book-now-btn > button {
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: #8d6f42;
+  color: #fff;
 }
 
 /* About Section */
@@ -567,9 +649,34 @@ header nav {
   background: rgb(255, 140, 0, 0.7);
   text-align: center;
   margin: 5px 0;
-  /* border-radius: 5px; */
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 10000;
+  width: 41px;
+  background: rgb(255, 140, 0, 0.7);
+  border-radius: 100%;
+  text-align: center;
+  transition: all 0.3 ease-in-out;
+}
+
+.top-btn:hover {
+  background: rgb(255, 140, 0);
+}
+
+.top-btn a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.rotated {
+  transform: rotate(180deg);
 }
