@@ -38,12 +38,16 @@ header nav {
   align-items: center;
   font-size: 18px;
   font-weight: 600;
+  gap: 10px;
 }
 
-.nav-items ul {
+.nav-items {
   max-width: 500px;
   display: block;
   width: 100%;
+}
+
+.nav-items ul {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -59,7 +63,7 @@ header nav {
   gap: 10px;
 }
 
-.call-us p {
+.call-us a {
   color: #ff8c00;
 }
 
@@ -85,26 +89,26 @@ header nav {
 
 .hero-carousel .prev {
   position: absolute;
-  left: 20px;
+  left: 50px;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
   border: none;
-  padding: 5px 10px;
-  font-size: 30px;
+  padding: 5px 8px;
+  font-size: 25px;
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
 
 .hero-carousel .next {
   position: absolute;
-  right: 20px;
+  right: 50px;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
   border: none;
-  padding: 5px 10px;
-  font-size: 30px;
+  padding: 5px 8px;
+  font-size: 25px;
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
@@ -156,7 +160,7 @@ header nav {
 
 #about-section h2 {
   color: #ff8c00;
-  margin: 0 0 60px;
+  margin: 0 0 40px;
   padding: 80px 0 0;
   font-family: "Cinzel Decorative", serif;
   font-size: 40px;
@@ -168,11 +172,10 @@ header nav {
 
 #about-section .swiper {
   width: 100%;
-  /* overflow: visible; */
 }
 
 #about-section .swiper-slide {
-  height: 600px;
+  height: 580px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -299,6 +302,7 @@ header nav {
   height: 35px;
   width: 35px;
   border-radius: 100%;
+  transition: all 0.2s ease-in-out;
 }
 
 #services-section .swiper-button-prev::after {
@@ -315,6 +319,7 @@ header nav {
   height: 35px;
   width: 35px;
   border-radius: 100%;
+  transition: all 0.2s ease-in-out;
 }
 
 #services-section .swiper-button-next::after {
@@ -543,4 +548,28 @@ header nav {
 
 .error {
   border: 1px solid red;
+}
+
+/* social icons */
+.socialicons {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 10000;
+}
+
+.socialicons a {
+  display: block;
+  font-size: 25px;
+  width: 35px;
+  height: 30px;
+  background: rgb(255, 140, 0, 0.7);
+  text-align: center;
+  margin: 5px 0;
+  /* border-radius: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
 }

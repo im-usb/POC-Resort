@@ -48,3 +48,39 @@
 #services-section .swiper-slide > div:hover img {
   transform: scale(1.1);
 }
+
+#services-section .swiper-button-prev:hover {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+#services-section .swiper-button-next:hover {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+/* social icons */
+
+.social-fb:hover,
+.social-lin:hover,
+.social-ig:hover,
+.social-yt:hover,
+.social-wp:hover {
+  color: #fff;
+}
+
+.social-fb:hover {
+  background: #316ff6;
+}
+.social-lin:hover {
+  background: #0a66c2;
+}
+.social-ig:hover {
+  background: #cd486b;
+}
+.social-yt:hover {
+  background: #cd201f;
+}
+.social-wp:hover {
+  background: #128c7e;
+}
