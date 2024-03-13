@@ -223,7 +223,6 @@ header nav {
 
 .book-now-btn > button {
   width: 100%;
-  text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
   border: none;
