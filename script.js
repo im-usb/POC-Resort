@@ -66,7 +66,7 @@ var swiper = new Swiper(".themeSwiper", {
   grabCursor: true,
   centeredSlides: true,
   coverflowEffect: {
-    stretch: 0,
+    stretch: 130,
     depth: 200,
     modifier: 1,
     slideShadows: false,
