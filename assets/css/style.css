@@ -76,8 +76,8 @@ header nav {
 
 /* Hero Section */
 #hero-section {
-  min-height: 768px;
-  height: 100vh;
+  min-height: 600px;
+  height: calc(100vh - 38px);
   overflow: hidden;
 }
 
@@ -89,13 +89,13 @@ header nav {
 
 .hero-carousel .hero-title {
   position: absolute;
-  top: 50%;
+  bottom: 5px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .hero-carousel .hero-title > h1::after {
@@ -108,7 +108,7 @@ header nav {
 }
 
 .hero-carousel .hero-title h2 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .hero-carousel .prev {
@@ -170,58 +170,68 @@ header nav {
 /* Booking Section */
 #booking-section form {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  padding: 20px 40px;
-  background-color: rgb(255, 140, 0, 0.5);
-  margin: -52px auto 60px;
+  padding: 10px 10px 10px 50px;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  margin: -30px auto 60px;
   max-width: 1024px;
   position: relative;
   z-index: 100;
+  border-radius: 40px;
+  max-width: 800px;
 }
 
-.check-in-container,
-.check-out-container,
+.name-container,
+.email-container,
 .contact-container {
-  max-width: 200px;
-  width: 100%;
+  width: 25%;
 }
 
-.check-in-container label,
-.check-out-container label,
+/* .name-container label,
+.email-container label,
 .contact-container label {
   display: block;
   color: #fff;
   font-weight: 500;
   margin: 0 0 5px;
   text-transform: uppercase;
-}
+} */
 
-.check-in-container input,
-.check-out-container input,
+.name-container input,
+.email-container input,
 .contact-container input {
   width: 100%;
+  /* height: 58px; */
   font-size: 18px;
   border: none;
-  padding: 5px 10px;
+  padding: 10px;
   outline: none;
 }
 
+.email-container input {
+  border: solid 1px #dedbdb;
+  border-top: none;
+  border-bottom: none;
+}
+
 .book-now-btn {
-  width: 100px;
-  height: 58px;
+  width: 20%;
+  /* height: 58px; */
+  margin: 0 0 0 auto;
 }
 
 .book-now-btn > button {
   width: 100%;
-  height: 100%;
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
   border: none;
-  background-color: #8d6f42;
+  background-color: #ff8c00;
   color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 40px;
 }
 
 /* About Section */
@@ -302,7 +312,7 @@ header nav {
 
 .about-desc h3 {
   font-family: "Cinzel Decorative", serif;
-  font-size: 30px;
+  font-size: 25px;
   color: #ff8c00;
   margin: 0 0 30px;
 }
@@ -335,6 +345,14 @@ header nav {
   backdrop-filter: brightness(0.5) blur(1px);
   padding: 50px 0;
   position: relative;
+  text-align: center;
+}
+
+.backdrop h3 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 0 30px;
 }
 
 #services-section .swiper {
@@ -371,7 +389,7 @@ header nav {
 #services-section .swiper-slide p {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -552,7 +570,7 @@ header nav {
   height: 550px;
   object-fit: cover;
   border-radius: 600px 600px 0 0;
-  box-shadow: 2px -5px 20px 0px #808080;
+  box-shadow: 4px -1px 20px -6px #737373;
 }
 
 #contactus-section .flex-container .right {
@@ -645,7 +663,7 @@ header nav {
   display: block;
   font-size: 25px;
   width: 35px;
-  height: 30px;
+  height: 40px;
   background: rgb(255, 140, 0, 0.7);
   text-align: center;
   margin: 5px 0;
@@ -653,6 +671,7 @@ header nav {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  color: #fff;
 }
 
 .top-btn {
