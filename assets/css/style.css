@@ -38,13 +38,17 @@ header nav {
   align-items: center;
   font-size: 18px;
   font-weight: 600;
-  /* padding: 5px 0; */
 }
 
 .nav-items ul {
+  max-width: 500px;
+  display: block;
+  width: 100%;
   list-style-type: none;
   padding: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
 
@@ -260,6 +264,7 @@ header nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 #services-section .swiper-slide > div {
@@ -289,8 +294,11 @@ header nav {
   position: absolute;
   left: 20px;
   top: 50%;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+  background-color: #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
 }
 
 #services-section .swiper-button-prev::after {
@@ -302,8 +310,11 @@ header nav {
   position: absolute;
   right: 20px;
   top: 50%;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+  background-color: #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
 }
 
 #services-section .swiper-button-next::after {
