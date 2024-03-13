@@ -76,10 +76,10 @@ var swiper = new Swiper(".themeSwiper", {
   },
   loop: true,
   slidesPerView: 2,
-  // autoplay: {
-  //   delay: 3000,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 3000,
+    pauseOnMouseEnter: true,
+  },
 });
 
 // Services carousel
