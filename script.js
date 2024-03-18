@@ -1,19 +1,21 @@
 //header
-let lastScrollTop = 0;
 const navbar = document.querySelector("header");
+let lastScrollTop = navbar.offsetHeight + 150;
 
 window.addEventListener("scroll", function () {
-  let currentScroll = window.scrollY || document.documentElement.scrollTop;
+  let currentScroll = window.scrollY;
 
   if (currentScroll > lastScrollTop) {
     // Scrolling down
-    navbar.style.top = "-100px"; // Hide the navbar
+    // navbar.style.top = "-100px"; // Hide the navbar
+    navbar.classList.add("active");
   } else {
     // Scrolling up
-    navbar.style.top = "0"; // Show the navbar
+    // navbar.style.top = "0"; // Show the navbar
+    navbar.classList.remove("active");
   }
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  // lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
 // Home Carousel
@@ -66,18 +68,16 @@ var swiper = new Swiper(".themeSwiper", {
   grabCursor: true,
   centeredSlides: true,
   coverflowEffect: {
-    stretch: 130,
+    rotate: 0,
+    stretch: -40,
     depth: 200,
-    modifier: 1,
+    modifier: 3,
     slideShadows: false,
   },
-  keyboard: {
-    enabled: true,
-  },
-  loop: true,
   slidesPerView: 2,
+  loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 2000,
     pauseOnMouseEnter: true,
   },
 });
@@ -106,8 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const topBtn = document.querySelector(".top-btn");
   const rotated = document.querySelector(".rotated");
   const handleScroll = () => {
-    const scrollPosition = document.documentElement.scrollTop;
-    if (scrollPosition < 50) {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition < topBtn.offsetHeight) {
       topBtn.querySelector("a").href = "#about-section";
       topBtn.style.animation = "towards-top 0.5s ease-in-out";
       topBtn.classList.remove("rotated");

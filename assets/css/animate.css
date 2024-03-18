@@ -3,7 +3,7 @@
 }
 
 /* Nav items animations */
-.nav-items li a::after {
+header .nav-items li a::after {
   content: "";
   display: block;
   width: 0;
@@ -12,11 +12,12 @@
   transition: width 0.3s;
 }
 
-.nav-items a:hover::after {
+header .nav-items a:hover::after {
   width: 100%;
 }
 
-.nav-items a:hover {
+header .nav-items a:hover,
+header.active .nav-items a:hover {
   color: #ff8c00;
   transition: ease 0.3s;
 }
