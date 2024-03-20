@@ -105,7 +105,15 @@ var swiper = new Swiper(".themeSwiper", {
 // Services carousel
 var swiper = new Swiper(".mySwiper", {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
+  breakpoints: {
+    1280: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+  },
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",

@@ -550,7 +550,7 @@ header.active .nav-items a {
 /* videos section */
 #videos-section {
   text-align: center;
-  padding: 80px 0 0;
+  padding: 80px 0;
 }
 
 #videos-section h2 {
@@ -615,10 +615,10 @@ header.active .nav-items a {
 
 /* Contact-us section */
 #contactus-section {
+  position: relative;
   text-align: center;
   padding: 80px 0 0;
   height: 100vh;
-  min-width: 768px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -718,6 +718,7 @@ header.active .nav-items a {
 
 /* social icons */
 .socialicons {
+  display: block;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -745,21 +746,25 @@ header.active .nav-items a {
   bottom: 30px;
   right: 20px;
   z-index: 2;
-  width: 41px;
-  background: rgb(255, 140, 0, 0.7);
-  border-radius: 100%;
   text-align: center;
   transition: all 0.3 ease-in-out;
 }
 
-.top-btn:hover {
-  background: rgb(255, 140, 0);
-}
-
 .top-btn a {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 900;
+  border-radius: 100%;
+}
+
+.top-btn .fa-chevron-down {
+  background: rgb(255, 140, 0, 0.7);
+  border-radius: 100%;
+  padding: 8px;
+}
+
+.top-btn .fa-chevron-down:hover {
+  background: rgb(255, 140, 0);
 }
 
 .rotated {
@@ -797,6 +802,18 @@ header.active .nav-items a {
   .about-desc .right-desc-bg {
     width: 100px;
   }
+
+  #services-section .swiper-button-prev {
+    left: 10px;
+  }
+  #services-section .swiper-button-next {
+    right: 10px;
+  }
+
+  #contactus-section .flex-container .left .contact-img {
+    width: 400px;
+    height: 500px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -810,9 +827,6 @@ header.active .nav-items a {
 
   .buttons {
     display: block;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 20px;
   }
 
@@ -826,7 +840,10 @@ header.active .nav-items a {
   }
 
   .buttons a {
-    min-width: 0;
+    position: fixed;
+    display: block;
+    bottom: 10px;
+    left: 10px;
   }
 
   .buttons a > p {
@@ -834,8 +851,9 @@ header.active .nav-items a {
   }
 
   .fa-phone {
-    padding: 8px;
-    font-size: 15px;
+    padding: 9px;
+    font-size: 18px;
+    background: rgb(255, 140, 0, 0.7);
   }
 
   header .nav-items {
@@ -861,18 +879,18 @@ header.active .nav-items a {
   }
 
   header .nav-items a {
-    padding: 15px 0;
-    width: 10rem;
-    text-align: center;
+    padding: 15px;
     font-size: 16px;
   }
 
   .hero-carousel .prev {
-    left: 40px;
+    left: 10px;
+    font-size: 15px;
   }
 
   .hero-carousel .next {
-    right: 40px;
+    right: 10px;
+    font-size: 15px;
   }
 
   #booking-section form {
@@ -913,5 +931,71 @@ header.active .nav-items a {
 
   .about-desc p {
     width: 90%;
+  }
+
+  #services-section .swiper-slide > div {
+    width: 220px;
+    height: 220px;
+  }
+
+  #videos-section h3 {
+    margin: 0 0 30px;
+  }
+
+  #videos-section .videos {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .videos .flex-left,
+  .videos .flex-right {
+    width: 90%;
+  }
+
+  .videos .flex-right iframe,
+  .videos .flex-left iframe {
+    left: -50px;
+  }
+
+  .videos iframe {
+    max-width: 700px;
+  }
+
+  #contactus-section .flex-container {
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  #contactus-section .flex-container .left .contact-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.5);
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  #contactus-section .flex-container .right label {
+    color: #fff;
+  }
+
+  .socialicons {
+    display: none;
+  }
+
+  .top-btn {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .top-btn a {
+    width: 34px;
   }
 }
