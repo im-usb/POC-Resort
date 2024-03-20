@@ -18,6 +18,22 @@ window.addEventListener("scroll", function () {
   // lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
+// header nav-items rwd
+const navitems = document.querySelector(".nav-items");
+const menuBtn = document.querySelector("#menu-btn");
+
+menuBtn.addEventListener("click", () => {
+  navitems.classList.toggle("active");
+  document.addEventListener("click", (e) => {
+    if (
+      !e.composedPath().includes(navitems) &&
+      !e.composedPath().includes(menuBtn)
+    ) {
+      navitems.classList.remove("active");
+    }
+  });
+});
+
 // Home Carousel
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
@@ -62,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
   resetInterval();
 });
 
-// about carousel
 var swiper = new Swiper(".themeSwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -74,7 +89,12 @@ var swiper = new Swiper(".themeSwiper", {
     modifier: 3,
     slideShadows: false,
   },
-  slidesPerView: 2,
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+  },
   loop: true,
   autoplay: {
     delay: 2000,

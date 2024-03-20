@@ -3,7 +3,7 @@
 }
 
 /* Nav items animations */
-header .nav-items li a::after {
+header .nav-items a::after {
   content: "";
   display: block;
   width: 0;
@@ -20,6 +20,19 @@ header .nav-items a:hover,
 header.active .nav-items a:hover {
   color: #ff8c00;
   transition: ease 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-items a:hover::after {
+    width: 0;
+  }
+
+  header .nav-items a:hover,
+  header.active .nav-items a:hover {
+    color: #ff8c00;
+    background-color: #fff;
+    transition: ease 0.3s;
+  }
 }
 
 /* Hero section animations */

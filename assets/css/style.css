@@ -49,14 +49,7 @@ header::before {
 }
 
 header.active::before {
-  /* content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; */
   background-color: #fff;
-  /* z-index: -2; */
   transition: all 0.3s ease-in-out;
 }
 
@@ -66,17 +59,13 @@ header nav {
   align-items: center;
   font-size: 18px;
   font-weight: 600;
-  gap: 10px;
+  gap: 20px;
 }
 
 header .nav-items {
   max-width: 500px;
   display: block;
   width: 100%;
-}
-
-header .nav-items ul {
-  list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -84,23 +73,22 @@ header .nav-items ul {
   gap: 20px;
 }
 
-header .nav-items ul a {
+header .nav-items a {
   color: #fff;
 }
 
-header.active .nav-items ul a {
+header.active .nav-items a {
   color: #737373;
 }
 
-.call-us {
+.buttons a {
+  color: #ff8c00;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-}
-
-.call-us a {
-  color: #ff8c00;
+  gap: 5px;
+  min-width: 210px;
+  width: 100%;
 }
 
 .fa-phone {
@@ -108,6 +96,10 @@ header.active .nav-items ul a {
   color: #fff;
   background-color: #ff8c00;
   border-radius: 100%;
+}
+
+#menu-btn {
+  display: none;
 }
 
 /* Hero Section */
@@ -772,4 +764,154 @@ header.active .nav-items ul a {
 
 .rotated {
   transform: rotate(180deg);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+  header .nav-items a {
+    font-size: 15px;
+  }
+
+  .buttons a {
+    font-size: 15px;
+  }
+
+  .hero-carousel .hero-title {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .hero-carousel .hero-title > h1 {
+    font-size: 25px;
+  }
+
+  #about-section .right-bg {
+    width: 150px;
+  }
+
+  .about-desc .left-desc-bg {
+    width: 100px;
+  }
+
+  .about-desc .right-desc-bg {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-logo a > img {
+    width: 150px;
+  }
+
+  header.active #menu-btn {
+    color: #ff8c00;
+  }
+
+  .buttons {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #menu-btn {
+    display: block;
+    border: none;
+    font-size: 25px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .buttons a {
+    min-width: 0;
+  }
+
+  .buttons a > p {
+    display: none;
+  }
+
+  .fa-phone {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  header .nav-items {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: #ff8c00;
+    height: auto;
+    width: 10rem;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 20%);
+    right: -100%;
+    z-index: 2;
+    transition: right 0.2s ease-in-out;
+  }
+
+  header .nav-items.active {
+    right: 0;
+    color: #ffffff;
+  }
+
+  header.active .nav-items a {
+    color: #fff;
+  }
+
+  header .nav-items a {
+    padding: 15px 0;
+    width: 10rem;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .hero-carousel .prev {
+    left: 40px;
+  }
+
+  .hero-carousel .next {
+    right: 40px;
+  }
+
+  #booking-section form {
+    padding: 15px;
+  }
+
+  .name-container input,
+  .email-container input,
+  .contact-container input {
+    font-size: 15px;
+  }
+
+  .book-now-btn > button {
+    font-size: 15px;
+  }
+
+  #about-section .right-bg {
+    width: 80px;
+  }
+
+  #about-section h2 {
+    padding: 80px 20px 0;
+    font-size: 30px;
+  }
+
+  #about-section .swiper-slide {
+    height: 300px;
+  }
+
+  .about-desc .left-desc-bg {
+    width: 80px;
+  }
+
+  .about-desc .right-desc-bg {
+    width: 80px;
+    z-index: -1;
+  }
+
+  .about-desc p {
+    width: 90%;
+  }
 }
