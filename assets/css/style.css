@@ -893,10 +893,14 @@ footer .flex-container {
     width: 200px;
   }
 
+  .bottom {
+    padding: 0 25px 20px;
+  }
+
   .bottom .images {
     flex-wrap: wrap-reverse;
     max-width: 500px;
-    justify-content: center;
+    justify-content: left;
   }
 
   .bottom .images .items img {
@@ -1041,6 +1045,10 @@ footer .flex-container {
     height: 220px;
   }
 
+  .top {
+    padding: 0 0 20px;
+  }
+
   .top .images .items img {
     width: 120px;
     border-radius: 10px;
@@ -1052,6 +1060,10 @@ footer .flex-container {
 
   .top .content ul li {
     font-size: 15px;
+  }
+
+  .bottom {
+    padding: 0;
   }
 
   .bottom .images .items img {
