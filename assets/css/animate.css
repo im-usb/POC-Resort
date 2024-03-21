@@ -73,8 +73,36 @@ header.active .nav-items a:hover {
   color: #fff;
 }
 
-/* social icons */
+/* Footer Socials */
+.credentials .socials .social-fb:hover,
+.credentials .socials .social-lin:hover,
+.credentials .socials .social-ig:hover,
+.credentials .socials .social-yt:hover,
+.credentials .socials .social-wp:hover {
+  color: #fff;
+}
 
+.credentials .socials .social-fb:hover {
+  background: #316ff6;
+}
+.credentials .socials .social-lin:hover {
+  background: #0a66c2;
+}
+.credentials .socials .social-ig:hover {
+  background: #cd486b;
+}
+.credentials .socials .social-yt:hover {
+  background: #cd201f;
+}
+.credentials .socials .social-wp:hover {
+  background: #128c7e;
+}
+
+.footer-nav ul li a:hover {
+  color: #ff8c00;
+}
+
+/* social icons */
 .social-fb:hover,
 .social-lin:hover,
 .social-ig:hover,
