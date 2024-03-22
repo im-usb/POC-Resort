@@ -1011,8 +1011,15 @@ footer .flex-container {
     font-size: 15px;
   }
 
+  .name-container input,
+  .email-container input,
+  .contact-container input {
+    padding: 10px 0 10px 5px;
+  }
+
   .book-now-btn > button {
     font-size: 15px;
+    padding: 10px 5px;
   }
 
   #about-section .right-bg {
@@ -1021,7 +1028,7 @@ footer .flex-container {
 
   #about-section h2 {
     padding: 80px 20px 0;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #about-section .swiper-slide {
@@ -1044,6 +1051,19 @@ footer .flex-container {
   #services-section .swiper-slide > div {
     width: 220px;
     height: 220px;
+  }
+
+  #about-section .swiper-slide > h3 {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .about-desc h3 {
+    font-size: 25px;
+  }
+
+  .about-desc p {
+    font-size: 15px;
   }
 
   .top {
@@ -1146,5 +1166,38 @@ footer .flex-container {
 
   .top-btn a {
     width: 34px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bottom {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .bottom .images {
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .bottom .images .items img {
+    width: 105px;
+  }
+
+  #cottages-section .flex-container .bottom {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bottom .images {
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .bottom .images .items img {
+    width: 120px;
   }
 }
