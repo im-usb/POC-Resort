@@ -982,7 +982,9 @@ footer .flex-container {
     color: #ffffff;
   }
 
-  header.active .nav-items a {
+  header .nav-items.active a {
+    text-align: center;
+    width: 100%;
     color: #fff;
   }
 
